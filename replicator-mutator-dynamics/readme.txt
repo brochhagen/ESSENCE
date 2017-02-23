@@ -2,7 +2,7 @@
 
 This folder contains code to generate predictions about population level transmission and use of linguistic types (combinations of lexica and linguistic behavior). A pressure for communicative efficiency is exherted by the replicator dynamics, and a pressure for learnability by the mutator dynamics (corresponding to iterated Bayesian learning).
 
-The code allows for flexibility in specifying linguistic behavior (soft-maximization, best response, depth of mutual reasoning, ...), the kind of dynamics considered (replication only, mutation only, or replication and mutation), learning behavior (soft-maximization, posterior sampling/maximization), and data sparsity (sequence length, number of samples per parent type).
+The code allows for variable specification of linguistic behavior (soft-maximization, best response, depth of mutual reasoning, ...), the kind of dynamics considered (replication only, mutation only, or replication and mutation), learning behavior (soft-maximization, posterior sampling/maximization), and data sparsity (sequence length, number of samples per parent type).
 
 Details about the model's inner workings and theoretical background are found in:
 
