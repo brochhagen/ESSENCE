@@ -1,4 +1,5 @@
 from adaptation import run
+from plots import plt_results
 
 '''
 Run file: Compression-game with two players, prior convergence; preempter or plain
@@ -15,22 +16,34 @@ context = 0.75 #Informativity of a context: P(s1)
 adapt_strat = 'plain' #Sender inference strategy. Either 'plain' or 'preempter'
 ################################
 
-#Example 1 with the values specified above:
+
+#####Example 1 with the values specified above ######
 run(games,iterations_per_game,confidence_upper_bound,aug_value,lam,context,adapt_strat)
 
-#Example 2 with an uninformative context:
-context = 0.5
-run(games,iterations_per_game,confidence_upper_bound,aug_value,lam,context,adapt_strat)
+#Visualize results example 1:
+plt_results(adapt_strat,games,iterations_per_game,confidence_upper_bound,aug_value,lam,context)
 
 
-#Decoment for example 3 and 4
-##Example 3 with an informative context and a 'preemptive' learner
+
+
+######## Decoment for further examples: #######
+
+###Example 2 with an uninformative context:
+#context = 0.5
+#run(games,iterations_per_game,confidence_upper_bound,aug_value,lam,context,adapt_strat)
+#plt_results(adapt_strat,games,iterations_per_game,confidence_upper_bound,aug_value,lam,context)
+
+##### Example 3 with an informative context and a 'preemptive' learner #####
 #context = 0.9
 #adaptation_strategy = 'preempter'
 #run(games,iterations_per_game,confidence_upper_bound,aug_value,lam,context,adapt_strat)
-#
-###Example 4 with an uninformative context and a 'preemptive' learner
+#plt_results(adapt_strat,games,iterations_per_game,confidence_upper_bound,aug_value,lam,context)
+
+
+##### Example 4 with an uninformative context and a 'preemptive' learner #####
 #context = 0.5
 #adaptation_strategy = 'preempter'
 #run(games,iterations_per_game,confidence_upper_bound,aug_value,lam,context,adapt_strat)
+#plt_results(adapt_strat,games,iterations_per_game,confidence_upper_bound,aug_value,lam,context)
+
 
