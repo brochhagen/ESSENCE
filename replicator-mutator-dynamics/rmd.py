@@ -170,8 +170,5 @@ def run_dynamics(alpha,lam,k,sample_amount,gens,runs,states,messages,learning_pa
     print 'Incumbent type:', inc, ' with proportion ', p_mean[inc]
     if mutual_exclusivity:
         print 'Target type (t24) proportion: ', p_mean[24]
-    else:
-        print 'The bin of the incumbent', inc_bin
-        print 'Bin #', bins[inc_bin]
     print '#######################'
     print 
